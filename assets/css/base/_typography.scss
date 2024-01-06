@@ -1,0 +1,221 @@
+$text_transform: capitalize,
+uppercase,
+lowercase,
+initial;
+
+@each $i in $text_transform {
+    .text-#{$i} {
+        text-transform: $i;
+    }
+}
+
+/*-------- text_align --------*/
+$text_align: left,
+center,
+right,
+justify;
+
+@each $i in $text_align {
+    .#{$i} {
+        text-align: $i;
+    }
+}
+
+
+/*------ display poperty ------*/
+$display: block,
+inline-block,
+flex,
+inline-flex,
+grid;
+
+@each $i in $display {
+    .d-#{$i} {
+        display: $i;
+    }
+
+}
+
+/*------flex-direction---------*/
+$flex_direction: row,
+row-reverse,
+column,
+column-reverse;
+
+@each $i in $flex_direction {
+    .direction-#{$i} {
+        flex-direction: $i;
+
+    }
+}
+
+/*------flex-wrap-norap------*/
+$flex_wrapNowrap: wrap,
+nowrap;
+
+@each $i in $flex_wrapNowrap {
+    .#{$i} {
+        flex-wrap: $i;
+    }
+}
+
+/*------- align_item -------*/
+$align_items: start,
+end,
+center,
+baseline;
+
+@each $i in $align_items {
+    .align-#{$i} {
+        align-items: $i;
+    }
+
+}
+
+/*-------- justyfi-content --------*/
+$justify_content: start,
+end,
+center,
+space-between,
+space-around,
+space-evenly;
+
+@each $i in $justify_content {
+    .content-#{$i} {
+        justify-content: $i;
+    }
+}
+
+/*-------- justify-items --------*/
+$justify_items: start,
+end,
+center,
+stretch;
+
+@each $i in $justify_items {
+    .justify-#{$i} {
+        justify-items: $i;
+    }
+}
+
+/* buttons */
+.btn {
+    color: var(--white);
+    border-radius: 4px;
+    padding: 12px 24px;
+    line-height: 30px;
+
+    &.btn-primary {
+        background-color: var(--secondary);
+
+        &:hover {
+            background-color: var(--hover);
+            color: var(--white);
+        }
+    }
+
+    &.btn-border {
+        border: 1px solid var(--secondary);
+        border-color: var(--secondary);
+
+        &:hover {}
+
+    }
+}
+
+
+
+$fonts:(h1, 60px, 66px, 700),
+(h2, 48px, 44px, 700),
+(h3, 40px, 52.8px, 600),
+(h4, 32px, 44px, 600),
+(h5, 24px, 35.2px, 500),
+(h6, 20px, 26.4px, 400),
+(p, 16px, 22px, 400);
+
+@each $name,
+$font_size,
+$line_height,
+$font_weight in $fonts {
+    #{$name} {
+        font-size: $font_size;
+        line-height: $line_height;
+        font-weight: $font_weight;
+    }
+}
+
+$gap:50;
+
+@for $i from 1 through $gap {
+    .gap-#{$i *2} {
+        gap: $i * 2px;
+    }
+}
+
+// grid_gap
+$grid_gap:50;
+
+@for $i from 1 through $grid_gap {
+    .grid-gap-#{$i * 2} {
+        grid-gap: $i *2px;
+    }
+}
+
+
+
+
+/* ----Padding left,right & margin left,right-----*/
+@for $i from 1 through 52 {
+    .py-#{$i*2} {
+        padding-top: $i*2px;
+        padding-bottom: $i*2px;
+    }
+
+    .px-#{$i*2} {
+        padding-left: $i*2px;
+        padding-right: $i*2px;
+    }
+
+    .pl-#{$i*2} {
+        padding-left: $i*2px;
+    }
+
+    .pt-#{$i*2} {
+        padding-top: $i*2px;
+    }
+
+    .pr-#{$i*2} {
+        padding-right: $i*2px;
+    }
+
+    .pb-#{$i*2} {
+        padding-bottom: $i*2px;
+    }
+
+    /* margin left-top-right-bottom start */
+    .my-#{$i*2} {
+        margin-top: $i*2px;
+        margin-bottom: $i*2px;
+    }
+
+    .mx-#{$i*2} {
+        margin-left: $i*2px;
+        margin-right: $i*2px;
+    }
+
+    .ml-#{$i*2} {
+        margin-left: $i*2px;
+    }
+
+    .mt-#{$i*2} {
+        margin-top: $i*2px;
+    }
+
+    .mr-#{$i*2} {
+        margin-right: $i*2px;
+    }
+
+    .mb-#{$i*2} {
+        margin-bottom: $i*2px;
+    }
+}
