@@ -1,0 +1,26 @@
+.main_area {
+   .service {
+      background-color: rgba(0, 153, 255, 0.04);
+
+      .title_section {
+         &__desc {
+            width: 612px;
+         }
+      }
+
+      &__single {
+         background-color: var(--white);
+         height: 342px;
+      }
+
+      &__img {
+         width: 100px;
+         height: 100px;
+      }
+
+      &__desc {
+         width: 255px;
+         font-size: 14px;
+      }
+   }
+}
