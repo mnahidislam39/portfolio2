@@ -16,7 +16,7 @@ right,
 justify;
 
 @each $i in $text_align {
-    .#{$i} {
+    .text-#{$i} {
         text-align: $i;
     }
 }
@@ -43,7 +43,7 @@ column,
 column-reverse;
 
 @each $i in $flex_direction {
-    .direction-#{$i} {
+    .flex-direction-#{$i} {
         flex-direction: $i;
 
     }
@@ -54,7 +54,7 @@ $flex_wrapNowrap: wrap,
 nowrap;
 
 @each $i in $flex_wrapNowrap {
-    .#{$i} {
+    .flex-#{$i} {
         flex-wrap: $i;
     }
 }
@@ -66,7 +66,7 @@ center,
 baseline;
 
 @each $i in $align_items {
-    .align-#{$i} {
+    .align-items-#{$i} {
         align-items: $i;
     }
 
@@ -81,7 +81,7 @@ space-around,
 space-evenly;
 
 @each $i in $justify_content {
-    .content-#{$i} {
+    .justify-content-#{$i} {
         justify-content: $i;
     }
 }
@@ -93,7 +93,7 @@ center,
 stretch;
 
 @each $i in $justify_items {
-    .justify-#{$i} {
+    .justify-items-#{$i} {
         justify-items: $i;
     }
 }
@@ -101,6 +101,8 @@ stretch;
 /* buttons */
 .btn {
     color: var(--white);
+    width: 200px;
+    text-align: center;
     border-radius: 4px;
     padding: 12px 24px;
     line-height: 30px;
@@ -115,11 +117,12 @@ stretch;
     }
 
     &.btn-border {
+        color: var(--primary);
         border: 1px solid var(--secondary);
-        border-color: var(--secondary);
 
-        &:hover {}
-
+        &:hover {
+            color: var(--secondary);
+        }
     }
 }
 
@@ -130,8 +133,7 @@ $fonts:(h1, 60px, 66px, 700),
 (h3, 40px, 52.8px, 600),
 (h4, 32px, 44px, 600),
 (h5, 24px, 35.2px, 500),
-(h6, 20px, 26.4px, 400),
-(p, 16px, 22px, 400);
+(h6, 20px, 26.4px, 400);
 
 @each $name,
 $font_size,
