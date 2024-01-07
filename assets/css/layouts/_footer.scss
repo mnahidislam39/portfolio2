@@ -1,0 +1,51 @@
+.main_area {
+   .footer {
+      &__img {}
+
+      &__desc {
+         font-size: 17px;
+         width: 307px;
+      }
+
+      &__icon {
+         font-size: 20px;
+
+         &:hover {
+            color: var(--secondary);
+         }
+      }
+
+      &__title {
+         font-weight: 600;
+      }
+
+      &__link {
+         &:hover {
+            color: var(--secondary);
+         }
+      }
+
+      &__last {
+         width: 374px;
+      }
+
+      &__from {}
+
+      &__input {
+         width: 308px;
+         background-color: var(--primary);
+      }
+
+      &__submit {
+         width: 200px;
+         background-color: var(--secondary);
+         cursor: pointer;
+         transition: .3s;
+
+         &:hover {
+            background-color: var(--primary);
+         }
+      }
+
+   }
+}

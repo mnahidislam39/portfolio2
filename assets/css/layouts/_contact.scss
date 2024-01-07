@@ -1,50 +1,59 @@
 .main_area {
-   .footer {
-      &__img {}
+   .contact {
 
-      &__desc {
-         font-size: 17px;
-         width: 307px;
+      &__box {
+         border-radius: 4px;
+         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10);
+         position: relative;
+         overflow: hidden;
+
+         &::before {
+            position: absolute;
+            content: "";
+            bottom: 25px;
+            right: 65px;
+            width: 90px;
+            height: 90px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+         }
+
+         &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 153, 255, .1);
+            border-radius: 50%;
+            transform: translate(100px, 190px);
+         }
       }
+
+      &__title {}
 
       &__icon {
-         font-size: 20px;
+         color: var(--secondary);
 
          &:hover {
-            color: var(--secondary);
+            color: var(--primary);
          }
       }
 
-      &__title {
-         font-weight: 600;
-      }
+      &__single {
 
-      &__link {
-         &:hover {
-            color: var(--secondary);
+         input,
+         textarea {
+            border: 0;
+            outline: 0;
+            border-radius: 0;
+            border-bottom: 1px solid var(--secondary);
          }
-      }
-
-      &__last {
-         width: 374px;
-      }
-
-      &__from {}
-
-      &__input {
-         width: 308px;
-         background-color: var(--primary);
       }
 
       &__submit {
-         width: 200px;
-         background-color: var(--secondary);
          cursor: pointer;
-         transition: .3s;
-
-         &:hover {
-            background-color: var(--primary);
-         }
       }
 
    }
