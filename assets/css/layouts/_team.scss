@@ -1,12 +1,13 @@
 .main_area {
+
+   .title_section {
+      &__desc {
+         width: 600px;
+      }
+   }
+
    .team {
       background-color: rgba(0, 153, 255, 0.04);
-
-      .title_section {
-         &__desc {
-            width: 494px;
-         }
-      }
 
       &__single {
          height: 379px;
