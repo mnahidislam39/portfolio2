@@ -1,0 +1,33 @@
+.main_area {
+   .testimonial {
+      &__title {}
+
+      &__desc {
+         font-size: 14px;
+      }
+
+      &__single {
+         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+      }
+
+      &__icons {
+         color: var(--secondary);
+      }
+
+      &__info {}
+
+      &__img {}
+
+      &__name {
+         font-size: 16px;
+         line-height: 24px;
+         font-weight: 600;
+
+      }
+
+      &__deg {
+         display: block;
+         font-weight: 400;
+      }
+   }
+}

@@ -178,6 +178,9 @@ $grid_gap:50;
         padding-right: $i*2px;
     }
 
+    .p-#{$i*2} {
+        padding: $i*2px;
+    }
     .pl-#{$i*2} {
         padding-left: $i*2px;
     }
