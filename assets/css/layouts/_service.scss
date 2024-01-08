@@ -4,7 +4,11 @@
 
       .title_section {
          &__desc {
-            width: 612px;
+            width: 55%;
+
+            @include min-xs {
+               width: 100%;
+            }
          }
       }
 
@@ -21,7 +25,7 @@
       }
 
       &__desc {
-         width: 255px;
+         width: 80%;
          font-size: 14px;
       }
 

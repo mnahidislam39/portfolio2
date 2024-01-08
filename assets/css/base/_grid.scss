@@ -14,7 +14,7 @@
 
  $grid_columns: 12;
  $grid_xxl_brakepoint: 1400px;
- $grid_xl_brakepoint: 1200;
+ $grid_xl_brakepoint: 1200px;
  $grid_lg_brakepoint: 992px;
  $grid_md_brakepoint: 768px;
  $grid_sm_brakepoint: 576px;
@@ -107,34 +107,4 @@
      }
  }
 
-
- /* responsive mixin */
- @mixin min-xxl {
-     @media (min-width:$grid_xxl_brakepoint) {
-         @content;
-     }
- }
-
- @mixin min-xl {
-     @media (min-width:$grid_xl_brakepoint) and (max-width:$grid_xxl_brakepoint) {
-         @content;
-     }
- }
-
- @mixin min-lg {
-     @media (min-width:$grid_lg_brakepoint) and (max-width:$grid_xl_brakepoint) {
-         @content;
-     }
- }
-
- @mixin min-md {
-     @media (min-width:$grid_md_brakepoint) and (max-width:$grid_lg_brakepoint) {
-         @content;
-     }
- }
-
- @mixin min-xs {
-     @media (max-width:$grid_md_brakepoint) {
-         @content;
-     }
- }
+ 

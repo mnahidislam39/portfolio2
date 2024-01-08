@@ -29,5 +29,11 @@
          display: block;
          font-weight: 400;
       }
+
+      @include min-lg {
+         &__deg {
+            font-size: 13px;
+         }
+      }
    }
 }

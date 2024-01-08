@@ -1,7 +1,21 @@
 .main_area {
    .banner {
-      h1 {
+      &__title {
          letter-spacing: -0.9px;
+      }
+
+      @include min-xl {
+         .banner {
+            &__title {
+               font-size: 50px;
+            }
+
+            &__desc {
+               font-size: 16px;
+            }
+
+         }
+
       }
 
       .banner_img {

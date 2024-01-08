@@ -146,6 +146,127 @@ $font_weight in $fonts {
     }
 }
 
+@include min-xl {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 24px;
+    }
+
+    .px-80 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+@include min-lg {
+    h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+
+    .px-80 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .btn {
+        padding: 8px 14px;
+    }
+}
+
+@include min-md {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .px-80 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .btn {
+        padding: 5px 8px;
+    }
+}
+
+@include min-xs {
+    .py-120,
+    .pb-120 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding: 20px ;
+    }
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .py-80,
+    .pt-80,
+    .py-110,
+    .py-90 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .px-80 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .btn {
+        padding: 5px 8px;
+    }
+}
+
+$gap:50;
+
+@for $i from 1 through $gap {
+    .row-gap-#{$i *2} {
+        row-gap: $i * 2px;
+    }
+}
+
 $gap:50;
 
 @for $i from 1 through $gap {
@@ -181,6 +302,7 @@ $grid_gap:50;
     .p-#{$i*2} {
         padding: $i*2px;
     }
+
     .pl-#{$i*2} {
         padding-left: $i*2px;
     }

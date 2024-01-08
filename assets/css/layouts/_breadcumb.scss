@@ -7,6 +7,10 @@
 
       &__desc {
          width: 753px;
+
+         @include min-xs {
+            width: 100%;
+         }
       }
 
    }
@@ -16,11 +20,15 @@
          &__desc {
             width: 613px;
             font-size: 16px;
+
+            @include min-xs {
+               width: 100%;
+            }
          }
       }
 
       &__single {
-         filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.10));
+         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10);
       }
 
       &__title {
