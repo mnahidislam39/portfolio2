@@ -8,6 +8,8 @@
 
    <!-- font-awesome css -->
    <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
+   <!-- slicknav css -->
+   <link rel="stylesheet" href="assets/css/plugins/slicknav.css">
    <!-- main css -->
    <link rel="stylesheet" href="assets/css/main-style.min.css">
 </head>
@@ -19,19 +21,20 @@
       <!-- header_area start -->
       <div class="header py-30 px-0">
          <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-2">
-                  <a href="single-portfolio.html" class="header_logo"><img src="assets/images/logo/logo.png" alt=""></a>
+            <div class="row align-items-center row-gap-20">
+               <div class="col-lg-2 col-md-12 d-flex align-items-center justify-content-center">
+                  <a href="index.html" class="header_logo"><img src="assets/images/logo/logo.png" alt=""></a>
                </div>
-               <div class="col-md-8 d-flex justify-content-center">
-                  <ul class="header_menu gap-40">
+               <div class="col-lg-8 col-md-12 d-flex justify-content-center">
+                  <ul class="header_menu flex-wrap justify-content-center gap-40" id="header_menu">
                      <li class="menu_item"><a href="index.html" class="menu_link">home</a></li>
                      <li class="menu_item"><a href="" class="menu_link">services</a></li>
                      <li class="menu_item"><a href="" class="menu_link">about us</a></li>
                      <li class="menu_item"><a href="portfolio.html" class="menu_link">portfolio</a></li>
+                     <li class="menu_item"><a href="contact.html" class="menu_link">contact</a></li>
                   </ul>
                </div>
-               <div class="col-md-2">
+               <div class="col-lg-2 col-md-12 d-flex align-items-center justify-content-center">
                   <a href="" class="header_btn btn btn-primary">contact me</a>
                </div>
             </div>
@@ -150,17 +153,16 @@
       <!-- cta_area start -->
       <div class="cta ">
          <div class="container">
-            <div class="row">
+            <div class="row ">
                <div class="col-md-12">
-                  <div class="cta__box d-flex align-items-center justify-content-space-between py-110 px-96 ">
+                  <div class="cta__box d-flex align-items-center justify-content-space-between py-110 px-96 row-gap-20">
                      <div class="cta__content d-flex flex-direction-column gap-34">
                         <h4 class="cta__title">Do you have a project in mind?</h4>
                         <p class="cta__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit amet diam in est
                            pharetra porttitor libero.</p>
                      </div>
-                     <div class="cta__buttons d-flex gap-16">
+                     <div class="cta__buttons">
                         <a href="" class="cta__button btn btn-primary">Let’s talk</a>
-                        <a href="" class="cta__button btn btn-primary">learn more</a>
                      </div>
                   </div>
                </div>
@@ -172,8 +174,8 @@
       <!-- footer_area start -->
       <div class="footer py-90 px-50">
          <div class="container">
-            <div class="row">
-               <div class="col-md-4">
+            <div class="row row-gap-40">
+               <div class="col-lg-4 col-md-6 col-sm-1">
                   <img src="assets/images/logo/logo.png" alt="footer logo" class="footer__img">
                   <p class="footer__desc py-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie nulla
                      massa fringilla. </p>
@@ -186,7 +188,7 @@
                      <a href="" class="footer__icon"><i class="fab fa-behance"></i></a>
                   </div>
                </div>
-               <div class="col-md-2 d-flex flex-direction-column gap-40">
+               <div class="col-lg-2 col-md-6 col-sm-1 d-flex flex-direction-column gap-40">
                   <h6 class="footer__title">Menu</h6>
                   <ul class="footer__list flex-direction-column gap-20">
                      <li class="footer__item">
@@ -206,7 +208,7 @@
                      </li>
                   </ul>
                </div>
-               <div class="col-md-3 d-flex flex-direction-column gap-40">
+               <div class="col-lg-3 col-md-6 col-sm-1 d-flex flex-direction-column gap-40">
                   <h6 class="footer__title">Utility Pages</h6>
                   <ul class="footer__list flex-direction-column gap-20">
                      <li class="footer__item">
@@ -226,11 +228,11 @@
                      </li>
                   </ul>
                </div>
-               <div class="col-md-3 d-flex flex-direction-column gap-40">
+               <div class="col-lg-3 col-md-6 col-sm-1 d-flex flex-direction-column gap-40">
                   <h6 class="footer__title">Subscribe to our newsletter</h6>
                   <p class="footer__last">Lorem ipsum dolor sit amet consectetur adipiscing elit am dolor sit.</p>
-                  <form action="" class="footer__from d-flex flex-direction-column gap-24">
-                     <input type="email" name="" id="" class="footer__input py-12 px-24" placeholder="Enter your email">
+                  <form class="footer__from d-flex flex-direction-column gap-24">
+                     <input type="email" class="footer__input py-12 px-24" placeholder="Enter your email">
                      <input type="submit" class="footer__submit py-12 px-24" value="subscribe">
                   </form>
                </div>
@@ -249,6 +251,8 @@
 
    <!-- JQuery js -->
    <script src="assets/js/plugins/JQuery.js"></script>
+   <!-- slick-nav js -->
+   <script src="assets/js/plugins/slick-nav.min.js"></script>
    <!-- font-awesome js -->
    <script src="assets/js/plugins/font-awesome.min.js"></script>
    <!-- main js -->

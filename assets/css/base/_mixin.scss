@@ -29,6 +29,12 @@
     }
 }
 
+@mixin min-width {
+    @media (min-width:$grid_lg_brakepoint) {
+        @content;
+    }
+}
+
 @mixin bg {
     position: relative;
     width: 100%;

@@ -4,4 +4,7 @@ $(document).ready(function () {
       $(".faq__desc").not($(this).next()).slideUp(300);
       $(this).siblings().removeClass("active");
    });
+   $('#header_menu').slicknav();
+
+
 });

@@ -28,6 +28,10 @@
          &:hover {
             color: var(--secondary);
          }
+
+         @include min-xs {
+            font-size: 16px;
+         }
       }
 
       @include min-lg {

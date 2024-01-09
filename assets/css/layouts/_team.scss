@@ -13,6 +13,10 @@
          height: 379px;
          position: relative;
          border-radius: 4px 4px 0px 0px;
+
+         @include min-xs {
+            background-size: cover !important;
+         }
       }
 
       &__contents {
@@ -27,9 +31,9 @@
          transform: translate(26px, 65px);
 
          @include min-xs {
-            width: 100%;
+            width: 96%;
             padding: 10px;
-            transform: translate(0px, 55px);
+            transform: translate(2%, 55px);
          }
 
          @include min-md {

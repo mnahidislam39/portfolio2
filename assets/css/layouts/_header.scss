@@ -3,6 +3,7 @@
       border-bottom: 1px solid var(--border-color);
 
       .header_menu {
+
          .menu_item {
             .menu_link {
                font-size: 18px;
@@ -16,5 +17,22 @@
          }
       }
 
+
+   }
+}
+
+.header_menu {
+   display: none;
+
+   @include min-width {
+      display: flex;
+   }
+}
+
+.slicknav_menu {
+   display: block;
+
+   @include min-width {
+      display: none;
    }
 }
