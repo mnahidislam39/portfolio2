@@ -25,8 +25,16 @@
       }
 
       &__title {
-         font-size: 32px;
+         font-size: 25px !important;
          line-height: 42.5px;
+
+         @include min-xs {
+            font-size: 22px !important;
+         }
+
+         @include min-md {
+            font-size: 23px !important;
+         }
       }
 
       &__desc {

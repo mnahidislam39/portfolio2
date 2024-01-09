@@ -16,6 +16,18 @@
             height: 90px;
             background-color: var(--secondary);
             border-radius: 50%;
+
+            @include min-xs {
+               width: 20px;
+               height: 20px;
+
+            }
+
+            @include min-md {
+               width: 60px;
+               height: 60px;
+
+            }
          }
 
          &::after {
@@ -28,6 +40,19 @@
             background-color: rgba(0, 153, 255, .1);
             border-radius: 50%;
             transform: translate(100px, 190px);
+
+            @include min-xs {
+               transform: translate(70px, 280px);
+            }
+
+            @include min-md {
+               transform: translate(90px, 230px);
+            }
+         }
+
+         @include min-xs {
+            padding-left: 10px;
+            padding-right: 10px;
          }
       }
 
@@ -39,6 +64,25 @@
          &:hover {
             color: var(--primary);
          }
+
+      }
+
+      &__icons {
+         @include min-xs {
+            padding-top: 20px;
+            padding-bottom: 40px;
+         }
+
+         @include min-md {
+            padding-top: 20px;
+            padding-bottom: 40px;
+         }
+
+      }
+
+      &__form {
+         padding-left: 0;
+         padding-right: 0;
       }
 
       &__single {
